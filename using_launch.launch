@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+    <!--node name="rviz" pkg="rviz" type="rviz" args="-d $(find rplidar_ros)/rviz/rplidar.rviz" -->
+    <node name="srge3" pkg="rplidar_ros" type="srge3" />
+    <node name="gear" pkg="dji_sdk_demo" type="could_fly" />
+    <!--node name="acah" pkg="dji_sdk_demo" type="acah"  -->
+</launch>
